@@ -1,4 +1,4 @@
-const country = $('#country');
+const country = $('#countryCode');
 const regions = $('.region');
 const regionOther = $('.region[data-country=OTHER]');
 const selectedRegion = $('#selectedRegion');

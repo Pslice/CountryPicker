@@ -1,0 +1,3 @@
+.region:not(.active) {
+    display: none;
+  }
