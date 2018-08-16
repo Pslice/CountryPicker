@@ -24,4 +24,18 @@ function updateSelectedRegion() {
 }
 });
 
-
+class Validate {
+  constructor(pattern,value){
+      this.pattern = pattern;
+      this.value = value;
+  }
+  valid() {
+    if(value.match(pattern) === null){
+      return this.value.trim();
+    }
+      return false;
+  }
+  caps() {
+    return this.value.trim().toUpperCase();
+  }
+}

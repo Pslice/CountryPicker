@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Country Selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/countrySelector.js"></script>
+	<link rel="stylesheet" href="css/countrySelector.css">
+</head>
+<body>
+<label for="country">*Country</label>
+<select name="countryCode" id="countryCode" required>
+	<option value="" >CHOOSE...</option>
+	<option value="US" data-flag="US" data-phone="+1" data-eu="false">USA </option>
+    <option value="GB" data-flag="GB" data-phone="+44" data-eu="true">UK </option>
+    <option value="CA" data-flag="CA" data-phone="+1" data-eu="false">Canada </option>
+    <option value="DZ" data-flag="DZ" data-phone="+213" data-eu="false">Algeria </option>
+    <option value="AD" data-flag="AD" data-phone="+376" data-eu="false">Andorra </option>
+    <option value="AO" data-flag="AO" data-phone="+244" data-eu="false">Angola </option>
+    <option value="AI" data-flag="AI" data-phone="+1264" data-eu="false">Anguilla </option>
+    <option value="AG" data-flag="AG" data-phone="+1268" data-eu="false">Antigua &amp; Barbuda </option>
+    <option value="AR" data-flag="AR" data-phone="+54" data-eu="false">Argentina </option>
+    <option value="AM" data-flag="AM" data-phone="+374" data-eu="false">Armenia </option>
+    <option value="AW" data-flag="AW" data-phone="+297" data-eu="false">Aruba </option>
+    <option value="AU" data-flag="AU" data-phone="+61" data-eu="false">Australia </option>
+    <option value="AT" data-flag="AT" data-phone="+43" data-eu="true">Austria </option>
+    <option value="AZ" data-flag="AZ" data-phone="+994" data-eu="false">Azerbaijan </option>
+    <option value="BS" data-flag="BS" data-phone="+1242" data-eu="false">Bahamas </option>
+    <option value="BH" data-flag="BH" data-phone="+973" data-eu="false">Bahrain </option>
+    <option value="BD" data-flag="BD" data-phone="+880" data-eu="false">Bangladesh </option>
+    <option value="BB" data-flag="BB" data-phone="+1246" data-eu="false">Barbados </option>
+    <option value="BY" data-flag="BY" data-phone="+375" data-eu="false">Belarus </option>
+    <option value="BE" data-flag="BE" data-phone="+32" data-eu="true">Belgium </option>
+    <option value="BZ" data-flag="BZ" data-phone="+501" data-eu="false">Belize </option>
+    <option value="BJ" data-flag="BJ" data-phone="+229" data-eu="false">Benin </option>
+    <option value="BM" data-flag="BM" data-phone="+1441" data-eu="false">Bermuda </option>
+    <option value="BT" data-flag="BT" data-phone="+975" data-eu="false">Bhutan </option>
+    <option value="BO" data-flag="BO" data-phone="+591" data-eu="false">Bolivia </option>
+    <option value="BA" data-flag="BA" data-phone="+387" data-eu="false">Bosnia Herzegovina </option>
+    <option value="BW" data-flag="BW" data-phone="+267" data-eu="false">Botswana </option>
+    <option value="BR" data-flag="BR" data-phone="+55" data-eu="false">Brazil </option>
+    <option value="BN" data-flag="BN" data-phone="+673" data-eu="false">Brunei </option>
+    <option value="BG" data-flag="BG" data-phone="+359" data-eu="true">Bulgaria </option>
+    <option value="BF" data-flag="BF" data-phone="+226" data-eu="false">Burkina Faso </option>
+    <option value="BI" data-flag="BI" data-phone="+257" data-eu="false">Burundi </option>
+    <option value="KH" data-flag="KH" data-phone="+855" data-eu="false">Cambodia </option>
+    <option value="CM" data-flag="CM" data-phone="+237" data-eu="false">Cameroon </option>
+    <option value="CV" data-flag="CV" data-phone="+238" data-eu="false">Cape Verde Islands </option>
+    <option value="KY" data-flag="KY" data-phone="+1345" data-eu="false">Cayman Islands </option>
+    <option value="CF" data-flag="CF" data-phone="+236" data-eu="false">Central African Republic </option>
+    <option value="CL" data-flag="CL" data-phone="+56" data-eu="false">Chile </option>
+    <option value="CN" data-flag="CN" data-phone="+86" data-eu="false">China </option>
+    <option value="CO" data-flag="CO" data-phone="+57" data-eu="false">Colombia </option>
+    <option value="KM" data-flag="KM" data-phone="+269" data-eu="false">Comoros </option>
+    <option value="CG" data-flag="CG" data-phone="+242" data-eu="false">Congo </option>
+    <option value="CK" data-flag="CK" data-phone="+682" data-eu="false">Cook Islands </option>
+    <option value="CR" data-flag="CR" data-phone="+506" data-eu="false">Costa Rica </option>
+    <option value="HR" data-flag="HR" data-phone="+385" data-eu="true">Croatia </option>
+    <option value="CU" data-flag="CU" data-phone="+53" data-eu="false">Cuba </option>
+    <option value="CY" data-flag="CY" data-phone="+90392" data-eu="true">Cyprus North </option>
+    <option value="CY" data-flag="CY" data-phone="+357" data-eu="true">Cyprus South </option>
+    <option value="CZ" data-flag="CZ" data-phone="+42" data-eu="true">Czech Republic </option>
+    <option value="DK" data-flag="DK" data-phone="+45" data-eu="true">Denmark </option>
+    <option value="DJ" data-flag="DJ" data-phone="+253" data-eu="false">Djibouti </option>
+    <option value="DM" data-flag="DM" data-phone="+1809" data-eu="false">Dominica </option>
+    <option value="DO" data-flag="DO" data-phone="+1809" data-eu="false">Dominican Republic </option>
+    <option value="EC" data-flag="EC" data-phone="+593" data-eu="false">Ecuador </option>
+    <option value="EG" data-flag="EG" data-phone="+20" data-eu="false">Egypt </option>
+    <option value="SV" data-flag="SV" data-phone="+503" data-eu="false">El Salvador </option>
+    <option value="GQ" data-flag="GQ" data-phone="+240" data-eu="false">Equatorial Guinea </option>
+    <option value="ER" data-flag="ER" data-phone="+291" data-eu="false">Eritrea </option>
+    <option value="EE" data-flag="EE" data-phone="+372" data-eu="true">Estonia </option>
+    <option value="ET" data-flag="ET" data-phone="+251" data-eu="false">Ethiopia </option>
+    <option value="FK" data-flag="FK" data-phone="+500" data-eu="false">Falkland Islands </option>
+    <option value="FO" data-flag="FO" data-phone="+298" data-eu="false">Faroe Islands </option>
+    <option value="FJ" data-flag="FJ" data-phone="+679" data-eu="false">Fiji </option>
+    <option value="FI" data-flag="FI" data-phone="+358" data-eu="true">Finland </option>
+    <option value="FR" data-flag="FR" data-phone="+33" data-eu="true">France </option>
+    <option value="GF" data-flag="GF" data-phone="+594" data-eu="false">French Guiana </option>
+    <option value="PF" data-flag="PF" data-phone="+689" data-eu="false">French Polynesia </option>
+    <option value="GA" data-flag="GA" data-phone="+241" data-eu="false">Gabon </option>
+    <option value="GM" data-flag="GM" data-phone="+220" data-eu="false">Gambia </option>
+    <option value="GE" data-flag="GE" data-phone="+7880" data-eu="false">Georgia </option>
+    <option value="DE" data-flag="DE" data-phone="+49" data-eu="true">Germany </option>
+    <option value="GH" data-flag="GH" data-phone="+233" data-eu="false">Ghana </option>
+    <option value="GI" data-flag="GI" data-phone="+350" data-eu="false">Gibraltar </option>
+    <option value="GR" data-flag="GR" data-phone="+30" data-eu="true">Greece </option>
+    <option value="GL" data-flag="GL" data-phone="+299" data-eu="false">Greenland </option>
+    <option value="GD" data-flag="GD" data-phone="+1473" data-eu="false">Grenada </option>
+    <option value="GP" data-flag="GP" data-phone="+590" data-eu="false">Guadeloupe </option>
+    <option value="GU" data-flag="GU" data-phone="+671" data-eu="false">Guam </option>
+    <option value="GT" data-flag="GT" data-phone="+502" data-eu="false">Guatemala </option>
+    <option value="GN" data-flag="GN" data-phone="+224" data-eu="false">Guinea </option>
+    <option value="GW" data-flag="GW" data-phone="+245" data-eu="false">Guinea - Bissau </option>
+    <option value="GY" data-flag="GY" data-phone="+592" data-eu="false">Guyana </option>
+    <option value="HT" data-flag="HT" data-phone="+509" data-eu="false">Haiti </option>
+    <option value="HN" data-flag="HN" data-phone="+504" data-eu="false">Honduras </option>
+    <option value="HK" data-flag="HK" data-phone="+852" data-eu="false">Hong Kong </option>
+    <option value="HU" data-flag="HU" data-phone="+36" data-eu="true">Hungary </option>
+    <option value="IS" data-flag="IS" data-phone="+354" data-eu="false">Iceland </option>
+    <option value="IN" data-flag="IN" data-phone="+91" data-eu="false">India </option>
+    <option value="ID" data-flag="ID" data-phone="+62" data-eu="false">Indonesia </option>
+    <option value="IR" data-flag="IR" data-phone="+98" data-eu="false">Iran </option>
+    <option value="IQ" data-flag="IQ" data-phone="+964" data-eu="false">Iraq </option>
+    <option value="IE" data-flag="IE" data-phone="+353" data-eu="true">Ireland </option>
+    <option value="IL" data-flag="IL" data-phone="+972" data-eu="false">Israel </option>
+    <option value="IT" data-flag="IT" data-phone="+39" data-eu="true">Italy </option>
+    <option value="JM" data-flag="JM" data-phone="+1876" data-eu="false">Jamaica </option>
+    <option value="JP" data-flag="JP" data-phone="+81" data-eu="false">Japan </option>
+    <option value="JO" data-flag="JO" data-phone="+962" data-eu="false">Jordan </option>
+    <option value="KZ" data-flag="KZ" data-phone="+7" data-eu="false">Kazakhstan </option>
+    <option value="KE" data-flag="KE" data-phone="+254" data-eu="false">Kenya </option>
+    <option value="KI" data-flag="KI" data-phone="+686" data-eu="false">Kiribati </option>
+    <option value="KP" data-flag="KP" data-phone="+850" data-eu="false">Korea North </option>
+    <option value="KR" data-flag="KR" data-phone="+82" data-eu="false">Korea South </option>
+    <option value="KW" data-flag="KW" data-phone="+965" data-eu="false">Kuwait </option>
+    <option value="KG" data-flag="KG" data-phone="+996" data-eu="false">Kyrgyzstan </option>
+    <option value="LA" data-flag="LA" data-phone="+856" data-eu="false">Laos </option>
+    <option value="LV" data-flag="LV" data-phone="+371" data-eu="true">Latvia </option>
+    <option value="LB" data-flag="LB" data-phone="+961" data-eu="false">Lebanon </option>
+    <option value="LS" data-flag="LS" data-phone="+266" data-eu="false">Lesotho </option>
+    <option value="LR" data-flag="LR" data-phone="+231" data-eu="false">Liberia </option>
+    <option value="LY" data-flag="LY" data-phone="+218" data-eu="false">Libya </option>
+    <option value="LI" data-flag="LI" data-phone="+417" data-eu="false">Liechtenstein </option>
+    <option value="LT" data-flag="LT" data-phone="+370" data-eu="true">Lithuania </option>
+    <option value="LU" data-flag="LU" data-phone="+352" data-eu="true">Luxembourg </option>
+    <option value="MO" data-flag="MO" data-phone="+853" data-eu="false">Macao </option>
+    <option value="MK" data-flag="MK" data-phone="+389" data-eu="false">Macedonia </option>
+    <option value="MG" data-flag="MG" data-phone="+261" data-eu="false">Madagascar </option>
+    <option value="MW" data-flag="MW" data-phone="+265" data-eu="false">Malawi </option>
+    <option value="MY" data-flag="MY" data-phone="+60" data-eu="false">Malaysia </option>
+    <option value="MV" data-flag="MV" data-phone="+960" data-eu="false">Maldives </option>
+    <option value="ML" data-flag="ML" data-phone="+223" data-eu="false">Mali </option>
+    <option value="MT" data-flag="MT" data-phone="+356" data-eu="true">Malta </option>
+    <option value="MH" data-flag="MH" data-phone="+692" data-eu="false">Marshall Islands </option>
+    <option value="MQ" data-flag="MQ" data-phone="+596" data-eu="false">Martinique </option>
+    <option value="MR" data-flag="MR" data-phone="+222" data-eu="false">Mauritania </option>
+    <option value="YT" data-flag="YT" data-phone="+269" data-eu="false">Mayotte </option>
+    <option value="MX" data-flag="MX" data-phone="+52" data-eu="false">Mexico </option>
+    <option value="FM" data-flag="FM" data-phone="+691" data-eu="false">Micronesia </option>
+    <option value="MD" data-flag="MD" data-phone="+373" data-eu="false">Moldova </option>
+    <option value="MC" data-flag="MC" data-phone="+377" data-eu="false">Monaco </option>
+    <option value="MN" data-flag="MN" data-phone="+976" data-eu="false">Mongolia </option>
+    <option value="MS" data-flag="MS" data-phone="+1664" data-eu="false">Montserrat </option>
+    <option value="MA" data-flag="MA" data-phone="+212" data-eu="false">Morocco </option>
+    <option value="MZ" data-flag="MZ" data-phone="+258" data-eu="false">Mozambique </option>
+    <option value="MN" data-flag="MN" data-phone="+95" data-eu="false">Myanmar </option>
+    <option value="NA" data-flag="NA" data-phone="+264" data-eu="false">Namibia </option>
+    <option value="NR" data-flag="NR" data-phone="+674" data-eu="false">Nauru </option>
+    <option value="NP" data-flag="NP" data-phone="+977" data-eu="false">Nepal </option>
+    <option value="NL" data-flag="NL" data-phone="+31" data-eu="true">Netherlands </option>
+    <option value="NC" data-flag="NC" data-phone="+687" data-eu="false">New Caledonia </option>
+    <option value="NZ" data-flag="NZ" data-phone="+64" data-eu="false">New Zealand </option>
+    <option value="NI" data-flag="NI" data-phone="+505" data-eu="false">Nicaragua </option>
+    <option value="NE" data-flag="NE" data-phone="+227" data-eu="false">Niger </option>
+    <option value="NG" data-flag="NG" data-phone="+234" data-eu="false">Nigeria </option>
+    <option value="NU" data-flag="NU" data-phone="+683" data-eu="false">Niue </option>
+    <option value="NF" data-flag="NF" data-phone="+672" data-eu="false">Norfolk Islands </option>
+    <option value="NP" data-flag="NP" data-phone="+670" data-eu="false">Northern Marianas </option>
+    <option value="NO" data-flag="NO" data-phone="+47" data-eu="false">Norway </option>
+    <option value="OM" data-flag="OM" data-phone="+968" data-eu="false">Oman </option>
+    <option value="PW" data-flag="PW" data-phone="+680" data-eu="false">Palau </option>
+    <option value="PA" data-flag="PA" data-phone="+507" data-eu="false">Panama </option>
+    <option value="PG" data-flag="PG" data-phone="+675" data-eu="false">Papua New Guinea </option>
+    <option value="PY" data-flag="PY" data-phone="+595" data-eu="false">Paraguay </option>
+    <option value="PE" data-flag="PE" data-phone="+51" data-eu="false">Peru </option>
+    <option value="PH" data-flag="PH" data-phone="+63" data-eu="false">Philippines </option>
+    <option value="PL" data-flag="PL" data-phone="+48" data-eu="true">Poland </option>
+    <option value="PT" data-flag="PT" data-phone="+351" data-eu="true">Portugal </option>
+    <option value="PR" data-flag="PR" data-phone="+1787" data-eu="false">Puerto Rico </option>
+    <option value="QA" data-flag="QA" data-phone="+974" data-eu="false">Qatar </option>
+    <option value="RE" data-flag="RE" data-phone="+262" data-eu="false">Reunion </option>
+    <option value="RO" data-flag="RO" data-phone="+40" data-eu="true">Romania </option>
+    <option value="RU" data-flag="RU" data-phone="+7" data-eu="false">Russia </option>
+    <option value="RW" data-flag="RW" data-phone="+250" data-eu="false">Rwanda </option>
+    <option value="SM" data-flag="SM" data-phone="+378" data-eu="false">San Marino </option>
+    <option value="ST" data-flag="ST" data-phone="+239" data-eu="false">Sao Tome &amp; Principe </option>
+    <option value="SA" data-flag="SA" data-phone="+966" data-eu="false">Saudi Arabia </option>
+    <option value="SN" data-flag="SN" data-phone="+221" data-eu="false">Senegal </option>
+    <option value="CS" data-flag="CS" data-phone="+381" data-eu="false">Serbia </option>
+    <option value="SC" data-flag="SC" data-phone="+248" data-eu="false">Seychelles </option>
+    <option value="SL" data-flag="SL" data-phone="+232" data-eu="false">Sierra Leone </option>
+    <option value="SG" data-flag="SG" data-phone="+65" data-eu="false">Singapore </option>
+    <option value="SK" data-flag="SK" data-phone="+421" data-eu="true">Slovak Republic </option>
+    <option value="SI" data-flag="SI" data-phone="+386" data-eu="true">Slovenia </option>
+    <option value="SB" data-flag="SB" data-phone="+677" data-eu="false">Solomon Islands </option>
+    <option value="SO" data-flag="SO" data-phone="+252" data-eu="false">Somalia </option>
+    <option value="ZA" data-flag="ZA" data-phone="+27" data-eu="false">South Africa </option>
+    <option value="ES" data-flag="ES" data-phone="+34" data-eu="true">Spain </option>
+    <option value="LK" data-flag="LK" data-phone="+94" data-eu="false">Sri Lanka </option>
+    <option value="SH" data-flag="SH" data-phone="+290" data-eu="false">St. Helena </option>
+    <option value="KN" data-flag="KN" data-phone="+1869" data-eu="false">St. Kitts </option>
+    <option value="SC" data-flag="SC" data-phone="+1758" data-eu="false">St. Lucia </option>
+    <option value="SD" data-flag="SD" data-phone="+249" data-eu="false">Sudan </option>
+    <option value="SR" data-flag="SR" data-phone="+597" data-eu="false">Suriname </option>
+    <option value="SZ" data-flag="SZ" data-phone="+268" data-eu="false">Swaziland </option>
+    <option value="SE" data-flag="SE" data-phone="+46" data-eu="true">Sweden </option>
+    <option value="CH" data-flag="CH" data-phone="+41" data-eu="false">Switzerland </option>
+    <option value="SI" data-flag="SI" data-phone="+963" data-eu="false">Syria </option>
+    <option value="TW" data-flag="TW" data-phone="+886" data-eu="false">Taiwan </option>
+    <option value="TJ" data-flag="TJ" data-phone="+7" data-eu="false">Tajikstan </option>
+    <option value="TH" data-flag="TH" data-phone="+66" data-eu="false">Thailand </option>
+    <option value="TG" data-flag="TG" data-phone="+228" data-eu="false">Togo </option>
+    <option value="TO" data-flag="TO" data-phone="+676" data-eu="false">Tonga </option>
+    <option value="TT" data-flag="TT" data-phone="+1868" data-eu="false">Trinidad &amp; Tobago </option>
+    <option value="TN" data-flag="TN" data-phone="+216" data-eu="false">Tunisia </option>
+    <option value="TR" data-flag="TR" data-phone="+90" data-eu="false">Turkey </option>
+    <option value="TM" data-flag="TM" data-phone="+7" data-eu="false">Turkmenistan </option>
+    <option value="TM" data-flag="TM" data-phone="+993" data-eu="false">Turkmenistan </option>
+    <option value="TC" data-flag="TC" data-phone="+1649" data-eu="false">Turks &amp; Caicos Islands </option>
+    <option value="TV" data-flag="TV" data-phone="+688" data-eu="false">Tuvalu </option>
+    <option value="UG" data-flag="UG" data-phone="+256" data-eu="false">Uganda </option>
+    <option value="UA" data-flag="UA" data-phone="+380" data-eu="false">Ukraine </option>
+    <option value="AE" data-flag="AE" data-phone="+971" data-eu="false">United Arab Emirates </option>
+    <option value="UY" data-flag="UY" data-phone="+598" data-eu="false">Uruguay </option>
+    <option value="UZ" data-flag="UZ" data-phone="+7" data-eu="false">Uzbekistan </option>
+    <option value="VU" data-flag="VU" data-phone="+678" data-eu="false">Vanuatu </option>
+    <option value="VA" data-flag="VA" data-phone="+379" data-eu="false">Vatican City </option>
+    <option value="VE" data-flag="VE" data-phone="+58" data-eu="false">Venezuela </option>
+    <option value="VN" data-flag="VN" data-phone="+84" data-eu="false">Vietnam </option>
+    <option value="VG" data-flag="VG" data-phone="+84" data-eu="false">Virgin Islands - British </option>
+    <option value="VI" data-flag="VI" data-phone="+84" data-eu="false">Virgin Islands - US </option>
+    <option value="WF" data-flag="WF" data-phone="+681" data-eu="false">Wallis &amp; Futuna </option>
+    <option value="YE" data-flag="YE" data-phone="+96" data-eu="false">Yemen </option>
+    <option value="ZM" data-flag="ZM" data-phone="+260" data-eu="false">Zambia </option>
+    <option value="ZW" data-flag="ZW" data-phone="+263" data-eu="false">Zimbabwe </option>
+</select>
+<div class="region" data-country="US">
+	<label for="regionUS">*State</label>
+	<select id="regionUS">
+	  <option value="">CHOOSE...</option>
+	  <option value="AL">Alabama</option>
+	  <option value="AK">Alaska</option>
+	  <option value="AZ">Arizona</option>
+	  <option value="AR">Arkansas</option>
+	  <option value="CA">California</option>
+	  <option value="CO">Colorado</option>
+	  <option value="CT">Connecticut</option>
+	  <option value="DE">Delaware</option>
+	  <option value="DC">District Of Columbia</option>
+	  <option value="FL">Florida</option>
+	  <option value="GA">Georgia</option>
+	  <option value="HI">Hawaii</option>
+	  <option value="ID">Idaho</option>
+	  <option value="IL">Illinois</option>
+	  <option value="IN">Indiana</option>
+	  <option value="IA">Iowa</option>
+	  <option value="KS">Kansas</option>
+	  <option value="KY">Kentucky</option>
+	  <option value="LA">Louisiana</option>
+	  <option value="ME">Maine</option>
+	  <option value="MD">Maryland</option>
+	  <option value="MA">Massachusetts</option>
+	  <option value="MI">Michigan</option>
+	  <option value="MN">Minnesota</option>
+	  <option value="MS">Mississippi</option>
+	  <option value="MO">Missouri</option>
+	  <option value="MT">Montana</option>
+	  <option value="NE">Nebraska</option>
+	  <option value="NV">Nevada</option>
+	  <option value="NH">New Hampshire</option>
+	  <option value="NJ">New Jersey</option>
+	  <option value="NM">New Mexico</option>
+	  <option value="NY">New York</option>
+	  <option value="NC">North Carolina</option>
+	  <option value="ND">North Dakota</option>
+	  <option value="OH">Ohio</option>
+	  <option value="OK">Oklahoma</option>
+	  <option value="OR">Oregon</option>
+	  <option value="PA">Pennsylvania</option>
+	  <option value="RI">Rhode Island</option>
+	  <option value="SC">South Carolina</option>
+	  <option value="SD">South Dakota</option>
+	  <option value="TN">Tennessee</option>
+	  <option value="TX">Texas</option>
+	  <option value="UT">Utah</option>
+	  <option value="VT">Vermont</option>
+	  <option value="VA">Virginia</option>
+	  <option value="WA">Washington</option>
+	  <option value="WV">West Virginia</option>
+	  <option value="WI">Wisconsin</option>
+	  <option value="WY">Wyoming</option>
+  </select>				
+</div>
+<label for="phone">*Phone</label>
+<div class="input-group">
+	<div class="input-group-prepend">
+	<span class="input-group-text" name="phoneCode" id="phoneCode"></span>
+	</div>
+	<input type="tel" name="phone" id="phone" required>   
+	<span class="text-danger"></span> 
+</div>    
+</body>
+</html>
+
