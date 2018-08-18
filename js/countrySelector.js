@@ -30,7 +30,7 @@ class Validate {
       this.value = value;
   }
   valid() {
-    if(value.match(pattern) === null){
+    if(this.value.match(this.pattern) === null){
       return this.value.trim();
     }
       return false;
